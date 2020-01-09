@@ -13,6 +13,6 @@ RUN chown remote_user:remote_user   -R /home/remote_user/.ssh && \
     chmod 600 /home/remote_user/.ssh/authorized_keys
 
 RUN /usr/bin/ssh-keygen -A > /dev/null 2>&1
-EXPOSE 22
+#EXPOSE 22
 
 CMD /usr/sbin/sshd -D
